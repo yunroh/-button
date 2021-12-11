@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Day & Night </title>
+  </head>
+
+  <body>
+
+    <h1> Day & Night </h1> <br>
+
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    var alist = document.querySelectorAll('a');
+
+    if(this.value === 'night') {
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      document.querySelector('input').value = 'day';
+
+      var i = 0;
+      while(i < alist.length) {
+        alist[i].style.color = 'powderblue';
+        i = i + 1;
+      }
+
+    }
+    else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      document.querySelector('input').value = 'night'
+
+      var i = 0;
+      while(i < alist.length) {
+        alist[i].style.color = 'blue';
+        i = i + 1;
+      }
+    }"
+    >
+
+    <li> <a herf = "1.html"> woowoo </a> </li>
+    <li> <a herf = "1.html"> what's goin on </a> </li>
+    <li> <a herf = "1.html"> whattsup </a> </li>
+
+  </body>
+</html>
